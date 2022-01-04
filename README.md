@@ -1,4 +1,4 @@
-# GNOME Shell
+## GNOME Shell
 GNOME Shell provides core user interface functions for the GNOME 3 desktop,
 like switching to windows and launching applications. GNOME Shell takes
 advantage of the capabilities of modern graphics hardware and introduces
@@ -11,20 +11,36 @@ see the [project wiki][project-wiki].
 
 Bugs should be reported to the GNOME [bug tracking system][bug-tracker].
 
-#Get and install
+## Get and install
 1.Clone this source (you can select another [color]) to your computer.<br>
 2.Open Terminal and type:<br>
-  - Ubuntu, Debian, Linux Mint... (apt-based distributions)<br> 
-   *$sudo apt build-dep gnome-shell && sudo apt install meson ninja-build*<br>
-  - Fedora, RedHat...<br>
-   *$sudo dnf build-dep gnome-shell && sudo apt install meson ninja-build*<br>
+  - Ubuntu, Debian, Linux Mint... (apt-based distributions)
+  ```
+   $sudo apt build-dep gnome-shell && sudo apt install meson ninja-build
+   ```
+  - Fedora, RedHat... (rpm-based distros) <br>
+   ```
+   $sudo dnf build-dep gnome-shell && sudo apt install meson ninja-build
+   ```
  You may need to install *mutter* manually.*Warning: Build GNOME 3.78 can take your system on your own risk!*<br>
-3.Build and install:<br> 
-  - meson build --prefix=/usr
-  - ninja -C build
-  - ninja -C build install
+3.Build and install:
+```
+   meson build --prefix=/usr
+   ninja -C build
+   ninja -C build install
+```
 4.Log out then log in back to see changes. 
-## Contributing
+
+## My GNOME is broken! What I need to do now?
+If your GNOME Shell is broken (see an error like "Your system can't recover"), do the following:
+* Download your preferred GNOME version here: https://download.gnome.org/sources/gnome-shell/
+* Press Ctrl + Shift (or Alt?) + F3 to enter TTY shell.
+* Log in your account (if required) using your account name (usually is the folder name in /home) and your password.
+* Use ```tar``` to extract the dowloaded source code, then build again like when you build gnome 3.78.
+* Reboot again
+And more, if you have other Desktop Environment like KDE, Cinnamon, Mate... and have other Display Manager (lightdm), it is easy to ignore the broken DE, log in to use other DE, and fix the error. You may can start the DE (not GNOME) by ```startx``` from the Command-Shell.
+
+## Contributing to GNOME
 
 To contribute, open merge requests at https://gitlab.gnome.org/GNOME/gnome-shell.
 
