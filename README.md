@@ -37,7 +37,7 @@ If your GNOME Shell is broken (see an error like "Your system can't recover"), d
 * Press Ctrl + Shift (or Alt?) + F3 to enter TTY shell.
 * Log in your account (if required) using your account name (usually is the folder name in /home) and your password.
 * Use ```tar``` to extract the dowloaded source code, then build again like when you build gnome 3.78.
-* Reboot again
+* Reboot again. <br>
 And more, if you have other Desktop Environment like KDE, Cinnamon, Mate... and have other Display Manager (lightdm), it is easy to ignore the broken DE, log in to use other DE, and fix the error. You may can start the DE (not GNOME) by ```startx``` from the Command-Shell.
 
 ## Contributing to GNOME
