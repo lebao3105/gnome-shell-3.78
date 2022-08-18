@@ -1,15 +1,7 @@
-## GNOME Shell
-GNOME Shell provides core user interface functions for the GNOME 3 desktop,
-like switching to windows and launching applications. GNOME Shell takes
-advantage of the capabilities of modern graphics hardware and introduces
-innovative user interface concepts to provide a visually attractive and
-easy to use experience.
+## GNOME Shell 3.78
+This is my customized GNOME Shell 3.38 with GNOME 40 look!
 
-For more information about GNOME Shell, including instructions on how
-to build GNOME Shell from source and how to get involved with the project,
-see the [project wiki][project-wiki].
-
-Bugs should be reported to the GNOME [bug tracking system][bug-tracker].
+This will keep the old GNOME's applications grid, but also have a nicer look.
 
 ## Get and install
 1.Clone this source (you can select another [color]) to your computer.<br>
@@ -20,7 +12,7 @@ Bugs should be reported to the GNOME [bug tracking system][bug-tracker].
    ```
   - Fedora, RedHat... (rpm-based distros) <br>
    ```
-   $sudo dnf build-dep gnome-shell && sudo apt install meson ninja-build
+   $sudo dnf build-dep gnome-shell && sudo dnf install meson ninja-build
    ```
  You may need to install *mutter* manually.*Warning: Build GNOME 3.78 can take your system on your own risk!*<br>
 3.Build and install:
@@ -33,20 +25,21 @@ Bugs should be reported to the GNOME [bug tracking system][bug-tracker].
 
 ## My GNOME is broken! What I need to do now?
 If your GNOME Shell is broken (see an error like "Your system can't recover"), do the following:
-* Download your preferred GNOME version here: https://download.gnome.org/sources/gnome-shell/
+* Get GNOME Shell source code in https://download.gnome.org/sources/gnome-shell/ or use system's default package manager.
 * Press Ctrl + Shift (or Alt?) + F3 to enter TTY shell.
 * Log in your account (if required) using your account name (usually is the folder name in /home) and your password.
-* Use ```tar``` to extract the dowloaded source code, then build again like when you build gnome 3.78.
-* Reboot again. <br>
+* Build GNOME Shell again like when you build gnome 3.78.
+* Reboot to see your desktop alives again:) <br>
 And more, if you have other Desktop Environment like KDE, Cinnamon, Mate... and have other Display Manager (lightdm), it is easy to ignore the broken DE, log in to use other DE, and fix the error. You may can start the DE (not GNOME) by ```startx``` from the Command-Shell.
 
-## Contributing to GNOME
+## Reporting bugs
+Because I'm using an old GNOME version, so if there are any shell bug happends, you should return to system's one.
 
-To contribute, open merge requests at https://gitlab.gnome.org/GNOME/gnome-shell.
+But if there are any theming issue here, report it to me. I'm working on them.
 
-Commit messages should follow the [GNOME commit message
-guidelines](https://wiki.gnome.org/Git/CommitMessages). We require an URL
-to either an issue or a merge request in each commit.
+## Screenshot(s)
+![Screenshot from 2022-08-18 22-24-17](https://user-images.githubusercontent.com/77564176/185434779-867fc04d-a87f-4e71-a280-f3f8290e9c39.png)
+![Screenshot from 2022-08-18 22-31-41](https://user-images.githubusercontent.com/77564176/185434861-66725a55-bf10-4a5f-b913-ed687c74576f.png)
 
 ## License
 GNOME Shell is distributed under the terms of the GNU General Public License,
@@ -55,4 +48,3 @@ version 2 or later. See the [COPYING][license] file for details.
 [project-wiki]: https://wiki.gnome.org/Projects/GnomeShell
 [bug-tracker]: https://gitlab.gnome.org/GNOME/gnome-shell/issues
 [license]: COPYING
-[color]:https://github.com/lebao3105/gnome-shell-3.78-pink
