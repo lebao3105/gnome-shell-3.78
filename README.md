@@ -26,11 +26,10 @@ This will keep the old GNOME's applications grid, but also have a nicer look.
 ## My GNOME is broken! What I need to do now?
 If your GNOME Shell is broken (see an error like "Your system can't recover"), do the following:
 * Get GNOME Shell source code in https://download.gnome.org/sources/gnome-shell/ or use system's default package manager.
-* Press Ctrl + Shift (or Alt?) + F3 to enter TTY shell.
+* Press Ctrl + Shift + F3 to enter TTY session.
 * Log in your account (if required) using your account name (usually is the folder name in /home) and your password.
 * Build GNOME Shell again like when you build gnome 3.78.
-* Reboot to see your desktop alives again:) <br>
-And more, if you have other Desktop Environment like KDE, Cinnamon, Mate... and have other Display Manager (lightdm), it is easy to ignore the broken DE, log in to use other DE, and fix the error. You may can start the DE (not GNOME) by ```startx``` from the Command-Shell.
+* Reboot to see your desktop alive again:) <br>
 
 ## Reporting bugs
 Because I'm using an old GNOME version, so if there are any shell bug happends, you should return to system's one.
