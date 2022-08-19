@@ -234,8 +234,9 @@ class RunDialog extends ModalDialog.ModalDialog {
     }
 
     _restart() {
+        // check if we're in Wayland
         if (Meta.is_wayland_compositor()) {
-            this._showError(_("Restart is not available on Wayland"));
+            this._showError(_("Sorry, restart is not available on Wayland. If needed, please log out and log in again.\nUse Xorg display server to make this work."));
             return;
         }
         this._shouldFadeOut = false;
