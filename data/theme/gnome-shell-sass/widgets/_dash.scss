@@ -3,7 +3,7 @@
 $dash_background_color: #111111;
 $dash_placeholder_size: 25px;
 $dash_spacing: $base_padding ;
-$dash_border_radius: $modal_radius ;
+$dash_border_radius: 26px;
 
 #dash {
   background-color: $dash_background_color;
@@ -27,7 +27,7 @@ $dash_border_radius: $modal_radius ;
 
 // Dash Items
 .dash-item-container > StWidget {
-  padding: ($dash_spacing / 2) $dash_spacing;
+  padding: $dash_spacing;
 }
 
 .dash-separator {
