@@ -229,8 +229,9 @@ var AppMenuButton = GObject.registerClass({
         this._label = new St.Label({ y_expand: true,
                                      y_align: Clutter.ActorAlign.CENTER });
         this._container.add_actor(this._label);
-        this._arrow = PopupMenu.arrowIcon(St.Side.BOTTOM);
-        this._container.add_actor(this._arrow);
+        // This is arrow we've seen on GNOME 3!
+        //this._arrow = PopupMenu.arrowIcon(St.Side.BOTTOM);
+        //this._container.add_actor(this._arrow);
 
         this._visible = !Main.overview.visible;
         if (!this._visible)
@@ -756,7 +757,8 @@ class AggregateMenu extends PanelMenu.Button {
         this._indicators.add_child(this._rfkill);
         this._indicators.add_child(this._volume);
         this._indicators.add_child(this._power);
-        this._indicators.add_child(PopupMenu.arrowIcon(St.Side.BOTTOM));
+        // So we've disabled arrow icons on the panel
+        //this._indicators.add_child(PopupMenu.arrowIcon(St.Side.BOTTOM));
 
         this.menu.addMenuItem(this._volume.menu);
         this.menu.addMenuItem(this._brightness.menu);
@@ -827,6 +829,8 @@ class Panel extends St.Widget {
         });
 
         Main.layoutManager.panelBox.add(this);
+        // You can change "Top Bar" to "Top Panel" or something else.
+        // It will be shown in Ctrl + Alt + Tab popup
         Main.ctrlAltTabManager.addGroup(this, _("Top Bar"), 'focus-top-bar-symbolic',
                                         { sortGroup: CtrlAltTab.SortGroup.TOP });
 
