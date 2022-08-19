@@ -1,9 +1,14 @@
 ## GNOME Shell 3.78
-This is my customized GNOME Shell 3.38 with GNOME 40 look!
+This is my customized GNOME Shell 3.38 with (a little bit) GNOME 40 look!
 
-This will keep the old GNOME's applications grid, but also have a nicer look.
+## Features
+* Customized application grid + dash
+* Circular on-screen keyboard
+* Transparent app folder (on application grid)
 
 ## Get and install
+**Critical**:Please note that this project can't be built on OS that have GNOME 4x preinstalled. Tested on Debian 11 with GNOME 3.38.5 (higher than this project)
+
 1.Clone this source (you can select another [color]) to your computer.<br>
 2.Open Terminal and type:<br>
   - Ubuntu, Debian, Linux Mint... (apt-based distributions)
@@ -36,9 +41,10 @@ Because I'm using an old GNOME version, so if there are any shell bug happends, 
 
 But if there are any theming issue here, report it to me. I'm working on them.
 
-## Screenshot(s)
+## Screenshots
 ![Screenshot from 2022-08-18 22-24-17](https://user-images.githubusercontent.com/77564176/185434779-867fc04d-a87f-4e71-a280-f3f8290e9c39.png)
 ![Screenshot from 2022-08-18 22-31-41](https://user-images.githubusercontent.com/77564176/185434861-66725a55-bf10-4a5f-b913-ed687c74576f.png)
+![Screenshot from 2022-08-19 15-13-33](https://user-images.githubusercontent.com/77564176/185575162-9a1b08b5-2c64-4a2f-9ba2-b80734b3f7c2.png)
 
 ## License
 GNOME Shell is distributed under the terms of the GNU General Public License,
