@@ -1189,6 +1189,7 @@ class PopupSubMenuMenuItem extends PopupBaseMenuItem {
         });
         this.add_child(expander);
 
+        // this is arrow icon for the menu's sub menu
         this._triangle = arrowIcon(St.Side.RIGHT);
         this._triangle.pivot_point = new Graphene.Point({ x: 0.5, y: 0.6 });
 
