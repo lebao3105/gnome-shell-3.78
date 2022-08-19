@@ -25,7 +25,7 @@ $panel_transition_duration: 250ms; // same as the overview transition duration
   
   &.login-screen,
     {
-    background-color: #ffffff;
+    background-color: transparent;
     
     .panel-corner{
       -panel-corner-opacity: 0;
@@ -34,7 +34,7 @@ $panel_transition_duration: 250ms; // same as the overview transition duration
 
   // spacing between activities, app menu and such
   #panelLeft, #panelCenter {
-    spacing: $base_spacing;
+    spacing: $base_spacing - 3px;
   }
 
   // the rounded outset corners
