@@ -7,10 +7,10 @@ This is my customized GNOME Shell 3.38 with a lot of customization!
 * Transparent app folder (on application grid)
 * Disabled panel items arrow (New)
 
-Most changes are implemented from [data/theme/gnome-shell-sass/widgets](data/theme/gnome-shell-sass/widgets/).
+Most changes are implemented on SCSS files from [data/theme/gnome-shell-sass/widgets](data/theme/gnome-shell-sass/widgets/).
 
 ## Get and install
-**Critical**:Please note that this project CAN'T be built on OS that have GNOME 4x preinstalled. Tested on Debian 11 with GNOME 3.38.5 (higher than this project).
+**Critical**: This project CAN'T be built on GNOME 4x compatible OSes. Tested on Debian 11 with GNOME 3.38.5 (higher than this project).
 
 1.Clone this repository using ```git``` (you can select another [color](https://github.com/lebao3105/gnome-shell-3.78-pink)) to your computer.<br>
 
@@ -34,11 +34,7 @@ Most changes are implemented from [data/theme/gnome-shell-sass/widgets](data/the
 4.Log out then log in back to see changes. 
 
 ## Try GNOME 3.78's theme without installing
-1. ```meson build``` this project first, anyway.
-2. Build: ```ninja -C build data/theme/gnome-shell.css```
-3. Once done, copy build/data/theme/gnome-shell.css to ```~/.themes/<your own theme>/gnome-shell/```.
-4. Make sure that GNOME Tweaks & User themes extension are installed.
-5. Choose your created theme from Tweaks -> Apperance -> Shell theme.
+Try to use SCSS program to compile gnome-shell.scss on ```data/theme```. Then install it as a shell theme.
 
 ## My GNOME is broken! What I need to do now?
 If your GNOME Shell is broken (see an error like "Your system can't recover"), there are 2 ways to fix it:

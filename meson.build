@@ -11,7 +11,7 @@ split_version = meson.project_version().split('.')
 # The API version is increased automatically each development cycle,
 # starting with 0 in 3.23.x
 api_version = (split_version[1].to_int() - 23) / 2
-mutter_api_version = '7'
+mutter_api_version = '10'
 
 clutter_pc = 'mutter-clutter-' + mutter_api_version
 cogl_pc = 'mutter-cogl-' + mutter_api_version
