@@ -5,7 +5,7 @@ This is my customized GNOME Shell 3.38 with a lot of customization!
 * Customized application grid + dash
 * Circular on-screen keyboard
 * Transparent app folder (on application grid)
-* Disabled panel items arrow (New)
+* Disabled panel items arrow (New) (Made on JS code)
 
 Most changes are implemented on SCSS files from [data/theme/gnome-shell-sass/widgets](data/theme/gnome-shell-sass/widgets/).
 
