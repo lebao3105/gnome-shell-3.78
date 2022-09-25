@@ -35,6 +35,7 @@ Most changes are implemented on SCSS files from [data/theme/gnome-shell-sass/wid
 
 ## Try GNOME 3.78's theme without installing
 > Note: On GNOME 40+ environment you will get a bad dash if you use this project.
+
 Try to use SCSS program to compile gnome-shell.scss on ```data/theme```. Then install it as a shell theme.
 
 ## My GNOME is broken! What I need to do now?
