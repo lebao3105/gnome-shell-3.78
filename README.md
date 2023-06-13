@@ -46,6 +46,11 @@ If your GNOME Shell is broken (see an error like "Your system can't recover"), t
   * Build GNOME Shell again like when you build this project.
 If somehow you can't go to TTY* session, boot a live usb then chroot your local OS and reinstall GNOME from there.
 
+## More things to do!
+* Go to this [js/ui/panel.js line 436](https://github.com/lebao3105/gnome-shell-3.78/blob/0b7f1ddbfa214c379bdda4f57cd4e7645aa85ca1/js/ui/panel.js#L436) and change "Activities" text to "Overview" if you'd like to (keep "")
+* Still js/ui/panel.js, but go to line 233-234, uncomment these lines if you want to have top panel arrows back.
+
+Re-compile + install GNOME to apply the changes.
 
 ## Screenshots
 ![Screenshot from 2022-08-18 22-24-17](https://user-images.githubusercontent.com/77564176/185434779-867fc04d-a87f-4e71-a280-f3f8290e9c39.png)
