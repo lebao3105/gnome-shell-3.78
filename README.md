@@ -1,53 +1,61 @@
 ## [GNOME Shell][project-wiki] 3.78
-This is my customized GNOME Shell 3.38 with a lot of customization!
+This is my customized GNOME 3.38 with a lot of customization!
 
 ## Features
 * Customized application grid + dash
-* Circular on-screen keyboard button
+* Rounded on-screen keyboard
 * Transparent app folder (on application grid)
-* Hidden panel items arrow (Made on JS code)
+* Hidden panel items arrow (Made on JS code, to re-enable revert the code change or use a GNOME extension)
 
-Most changes are implemented to SCSS files in [data/theme/gnome-shell-sass/widgets](data/theme/gnome-shell-sass/widgets/).
+Most changes are implemented in [data/theme/gnome-shell-sass/widgets](data/theme/gnome-shell-sass/widgets/).
 
 ## Get and install
 **Critical**: This project CAN'T be built on GNOME 4x compatible OSes due to dependency conflicts. Tested on Debian 11 with GNOME 3.38.5 (higher a little bit than this project).
 
 1.Clone this repository using ```git``` (you can choose another color [here](https://github.com/lebao3105/gnome-shell-3.78-pink), but it's now outdated) to your computer.<br>
 
-2.Install build tools & dependencies:<br>
+2.Install build tools & dependencies:
+
   - Ubuntu, Debian, Linux Mint... (apt-based distributions)
-  ```
+  ```bash
    $ sudo apt build-dep gnome-shell && sudo apt install meson ninja-build
   ```
+
   - Fedora, RedHat... (rpm-based distros) <br>
-  ```
+  ```bash
    $ sudo dnf build-dep gnome-shell && sudo dnf install meson ninja-build
   ```
-  > Tip: save packages the package manager install to remove it later, if you don't want to build GNOME Shell from source anymore.
+  > Tip: save packages the package manager install to remove them later, in case needed.
 
 3.Build and install:
+
 ```bash
 $ meson build --prefix=/usr
-$ ninja -C build install
+$ sudo ninja -C build install
 ```
-4.Log out then log in back to see changes. 
+4. Log out then log in back to see changes. You may need to reboot.
 
 ## Try GNOME 3.78's theme without installing
+
 > Note: On GNOME 40+ environment you will get a bad dash if you use this project.
 
 Try to use SCSS program to compile gnome-shell.scss from ```data/theme```. Then install it as a shell theme.
 
-## My GNOME is broken! What I need to do now?
-If your GNOME Shell is broken (see an error like "Your system can't recover"), there are 2 ways to fix it - please login to TTY session (press Ctrl + Shift + F3) or to another DE then open Terminal first:
+## My GNOME is broken!
+
+There are ways to fix: enter a TTY session or to another DE then open Terminal first:
 1. Reinstall the shell using your system package manager (the easiest way)
 2. Build vanila GNOME Shell:
   * Get GNOME Shell source code in https://download.gnome.org/sources/gnome-shell/ (requires wget/curl) or use system's default package manager.
-  * Use tar to extract your downloaded package.
+  * Extract your downloaded package.
   * Build GNOME Shell again like when you build this project.
-If somehow you can't go to TTY* session, boot a live usb then chroot your local OS and reinstall GNOME from there.
+
+If somehow you can't go to TTY* session, boot a live usb then chroot your local OS and do the fix.
+
+If the problem still there, there may be problem(s) on your system, maybe broken packages etc.
 
 ## More things to do!
-* Go to this [js/ui/panel.js line 436](https://github.com/lebao3105/gnome-shell-3.78/blob/0b7f1ddbfa214c379bdda4f57cd4e7645aa85ca1/js/ui/panel.js#L436) and change "Activities" text to "Overview" if you'd like to (keep "")
+* Go to this [js/ui/panel.js line 436](https://github.com/lebao3105/gnome-shell-3.78/blob/main/js/ui/panel.js#L436) and change "Activities" text to "Overview" if you'd like to (keep "")
 * Still js/ui/panel.js, but go to line 233-234, uncomment these lines if you want to have top panel arrows back.
 
 Re-compile + install GNOME to apply the changes.
